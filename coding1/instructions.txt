@@ -1,0 +1,14 @@
+Exercise 2.3: Write a program to perform the inverse operation to that of Example 2.2.
+That is, ask the user for the Cartesian coordinates x, y of a point in two-dimensional
+space, and calculate and print the corresponding polar coordinates, with the angle θ
+given in degrees.
+
+Exercise 2.7: Catalan numbers
+The Catalan numbers Cn are a sequence of integers 1, 1, 2, 5, 14, 42, 132. . . that play
+an important role in quantum mechanics and the theory of disordered systems. (They
+were central to Eugene Wigner’s proof of the so-called semicircle law.) They are given by
+C0 = 1, Cn+1 = ((4n + 2)/(n + 2))*Cn
+Write a program that prints in increasing order all Catalan numbers less than or equal
+to one billion.
+
+Repeat problems #1-9 from week 2
