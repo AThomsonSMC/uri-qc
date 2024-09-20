@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 '''
 author: Adam Thomson
 PHY 571 Coding Assignment 1
