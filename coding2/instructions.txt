@@ -1,0 +1,10 @@
+Use Python and NumPy to repeat problems from Week 3 homework:
+1.8
+2.14
+2.26, for a specific matrix
+3.29 for a specific angle
+4.13
+
+Find the eigenstuff for the Pauli Matrices
+
+Verify 3.15 on pg 249
