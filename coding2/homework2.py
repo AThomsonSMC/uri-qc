@@ -7,45 +7,54 @@ import numpy
 
 mat1a1 = numpy.array([[5,-1,2], [6,1,1]])
 mat1a2 = numpy.array([[2,1,4], [3,0,5]])
-print(f'1.8a) {(mat1a1+mat1a2).tolist()}')
+print(f'1.8a) {mat1a1.tolist()} + {mat1a2.tolist()} =')
+print(f'{(mat1a1+mat1a2).tolist()}')
 
 mat1b = numpy.array([[2, -1, -1], [1, 2, 3]])
-print(f'1.8b) {(6 * mat1b).tolist()}')
+print(f'1.8b) 6 * {mat1b.tolist()} =')
+print(f'{(6 * mat1b).tolist()}')
 
 mat1c = numpy.array([[2,1], [0,3]])
-print(f'1.8c) {(mat1c + mat1c).tolist()}')
+print(f'1.8c) {mat1c.tolist()} + {mat1c.tolist()} =')
+print(f'{(mat1c + mat1c).tolist()}')
 
 mat1d1 = numpy.array([[1,2], [3,-1]])
 mat1d2 = numpy.array([[-1,4], [-2,1]])
-print(f'1.8d) {((4*mat1d1) + (5*mat1d2)).tolist()}')
+print(f'1.8d) 4 * {mat1d1.tolist()} + 5 * {mat1d2.tolist()} =')
+print(f'{((4*mat1d1) + (5*mat1d2)).tolist()}')
 
 mat1e1 = numpy.array([[2,1], [0,3]])
 mat1e2 = numpy.array([[1,1,4], [3,0,5]])
+print (f'1.8e) 4 * {mat1e1.tolist()} + 2 * {mat1e2.tolist()} =')
 try:
   print(f'1.8e) {((3*mat1e1) + (2*mat1e2)).tolist()}') 
 except ValueError:
-  print('1.8e) Invalid operation, unable to add matrices of different dimensions!')
+  print('Invalid operation, unable to add matrices of different dimensions!')
 
 print('######')
 
 mat2a1 = numpy.array([[3,1], [-4, 2]])
 mat2a2 = numpy.array([[0,5], [0, 0.5]])
-print(f'2.14a) {(numpy.dot(mat2a1,mat2a2).tolist())}')
+print(f'2.14a) ({mat2a1.tolist()}) ({mat2a2.tolist()}) =')
+print(f'{(numpy.dot(mat2a1,mat2a2).tolist())}')
 
 mat2b1 = numpy.array([[1,1,-1], [4,0,3]])
 mat2b2 = numpy.array([[2,-1,-1], [3,1,1], [3,1,1]])
-print(f'2.14b) {(numpy.dot(mat2b1, mat2b2)).tolist()}')
+print(f'2.14b) ({mat2b1.tolist()}) ({mat2b2.tolist()}) =')
+print(f'{(numpy.dot(mat2b1, mat2b2)).tolist()}')
 
 mat2c1 = numpy.array([[2,-7],[7,4]])
 mat2c2 = numpy.array([[1,0, 5],[-1,1,1], [3,8,4]])
+print(f'2.14c) ({mat2c1.tolist()}) ({mat2c2.tolist()}) =')
 try:
-  print(f'2.14c) {(numpy.dot(mat2c1, mat2c2)).tolist()}')
+  print(f'{(numpy.dot(mat2c1, mat2c2)).tolist()}')
 except ValueError:
-  print('2.14c) Invalid operation, number of rows in second matrix does not match number of columns in first matrix!')
+  print('Invalid operation, number of rows in second matrix does not match number of columns in first matrix!')
 
 mat2d1 = numpy.array([[5,2], [3,1]])
 mat2d2 = numpy.array([[-1,2], [3,-5]])
-print(f'2.14d) {(numpy.dot(mat2d1, mat2d2)).tolist()}')
+print(f'2.14d) ({mat2d1.tolist()}) ({mat2d2.tolist()})')
+print(f'{(numpy.dot(mat2d1, mat2d2)).tolist()}')
 
 print('######')
 
@@ -113,3 +122,14 @@ print(f'Eigenvalues for σz: {eigz[0].tolist()}')
 print(f'Eigenvectors for σz: {eigz[1].tolist()}')
 print('The eigenvalues of σy are truly (-1, 1) without approximations')
 
+print('######')
+
+mat6a = numpy.array([[0,0,1], [1,0,0], [0,1,0]])
+mat6b = numpy.array([[1,2,3], [4,5,6], [7,8,9]])
+
+print(f'Exercise 3.15)')
+print(f'({mat6a.tolist()}) ({mat6b.tolist()}) = ')
+print(f'{numpy.dot(mat6a, mat6b).tolist()}')
+print('-------')
+print(f'({mat6b.tolist()}) ({mat6a.tolist()}) = ')
+print(f'{numpy.dot(mat6b, mat6a).tolist()}')
