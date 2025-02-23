@@ -24,5 +24,5 @@ REFERENCE_GENOMES = {
     # Approximately the size of a bacterial genome
     'test1M': generate_random_sequence(2**20),
     # Approximately the minimum size of a mammalian genome
-    'test2B': generate_random_sequence(2**31)
+    # 'test2B': generate_random_sequence(2**31)
 }
