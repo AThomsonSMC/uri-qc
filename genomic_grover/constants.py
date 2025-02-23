@@ -6,10 +6,3 @@ REFERENCE_GENOMES = {
     'test4': "TGCATGCATGCATGCA",
     'test5': "GACATCAGGGATCCAT"
 }
-
-BASE_MAP = {
-    "A": "00",
-    "C": "01",
-    "G": "10",
-    "T": "11",
-}
